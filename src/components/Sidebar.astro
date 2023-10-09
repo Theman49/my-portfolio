@@ -1,0 +1,87 @@
+---
+import "@coreui/icons/css/all.css"
+
+const pathname = new URL(Astro.request.url).pathname;
+const page = pathname.slice(1); // remove the first "/"
+
+const socmed = [
+    {
+        icon: 'cib-instagram',
+        url: 'https://www.instagram.com/denylukman49',
+    },
+    {
+        icon: 'cib-twitter',
+        url: 'https://www.twitter.com/DenyLukman49',
+    },
+    {
+        icon: 'cib-github',
+        url: 'https://www.github.com/theman49',
+    },
+    {
+        icon: 'cib-facebook',
+        url: 'https://www.facebook.com/cakdeny.cakdeny.39',
+    },
+    {
+        icon: 'cib-linkedin',
+        url: 'https://www.linkedin.com/in/deny-lukman-syarif',
+    },
+]
+---
+<div class="flex flex-col h-screen justify-between border-r px-7 py-[80px]">
+    <div class="flex flex-col items-center gap-6">
+        <img src="/logo.png" class="w-[150px] h-[150px]">
+        <div class="flex flex-col items-center text-white">
+            <p>Deny Lukman Syarif</p>
+            <p>Fullstack Web Developer</p>
+        </div>
+        <div class="flex justify-between items-center gap-2">
+            {socmed.map((item) => {
+                return (
+                    <a href={item.url}><i class={`${item.icon} text-[35px] text-light-2`}></i></a>
+                )
+            })}
+        </div>
+    </div>
+
+    <div id="link" class="flex flex-col">
+        <a href="/" class={page === 'home' || page === '' ? 'active' : ''}>
+            <div class="flex gap-2 text-white">
+                <i class="cil-home text-[24px]"></i>
+                <p>Home</p>
+            </div>
+        </a>
+        <a href="/projects" class={page === 'projects' ? 'active' : ''}>
+            <div class="flex gap-2 text-white">
+                <i class="cil-briefcase text-[24px]"></i>
+                <p>Projects</p>
+            </div>
+        </a>
+        <a href="/skills"class={page === 'skills' ? 'active' : ''}>
+            <div class="flex gap-2 text-white">
+                <i class="cil-tags text-[24px]"></i>
+                <p>Skills</p>
+            </div>
+        </a>
+        <a href="/about-me"class={page === 'about-me' ? 'active' : ''}>
+            <div class="flex gap-2 text-white">
+                <i class="cil-info text-[24px]"></i>
+                <p>About Me</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+<style>
+    #link div {
+        border-bottom: 1px solid white;
+        padding: 16px 0px;
+        align-items: center;
+    }
+    #link div:hover,
+    #link a.active > div {
+        color: #B6EADA;
+    }
+    #link p {
+        font-size: 20px;
+    }
+</style>
