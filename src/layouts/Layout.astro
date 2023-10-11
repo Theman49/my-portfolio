@@ -1,11 +1,22 @@
 ---
+import "@/styles/globals.css"
 import Sidebar from '@/components/Sidebar.astro'
+import ToggleTheme from '@/components/ToggleTheme.jsx'
+import { ViewTransitions } from 'astro:transitions';
+import {theme} from '@/store'
+
+
+// let valueTheme: string = theme.get()
+const gTheme = theme.get() === 'dark' ? 'bg-dark-1' : 'bg-light-1'
+	
 
 interface Props {
 	title: string;
 }
 
 const { title } = Astro.props;
+
+
 ---
 
 <!doctype html>
@@ -14,14 +25,46 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="manifest" href="/manifest.json"/>
+		<link rel="icon" type="image/svg+xml" href="/logo-stroke.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ViewTransitions />
 	</head>
-	<body class="bg-dark-1">
-		<div class="flex">
+	<body class={gTheme}>
+		<div class="flex flex-col md:flex-row">
 			<Sidebar />
-			<slot />
+			<div class="flex flex-col w-full md:border-l p-4">
+				<div class="flex justify-end p-1 w-full">
+					<ToggleTheme client:only="react" />
+				</div>
+				<div class="p-3">
+					<slot />
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
+
+<!-- <script is:inline>
+	const theme = localStorage.getItem('theme')
+	document.querySelector('body').className = `bg-${theme}-1`
+</script> -->
+
+<style is:global>
+	body {
+		background-image: url('/bg-right-bottom.png');
+		background-repeat: no-repeat;
+		background-position: right bottom;
+	}
+
+	@media screen and (max-width: 365px){
+	body {
+		background-image: url('/bg-right-bottom.png');
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		background-size: 80%;
+	}
+
+	}
+</style>

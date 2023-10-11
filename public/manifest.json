@@ -1,0 +1,17 @@
+{
+    "name": "Deny Portfolio",
+    "short_name": "DenyPortfolio",
+    "start_url": "/",
+    "id": "/",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "This is Deny Lukman Portfolio",
+    "icons": [
+      {
+        "src": "/logo.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }
+    ]
+  }
+  
