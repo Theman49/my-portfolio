@@ -10,5 +10,10 @@ export default defineConfig({
       applyBaseStyles: false
     }), 
     react(),
-  ]
+  ],
+  vite: {
+    ssr: {
+      noExternal: ["react-icons"]
+    }
+  }
 });
