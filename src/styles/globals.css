@@ -75,8 +75,8 @@
   }
 }
 
-* {
+.transition-1 {
   transition: all;
   transition-timing-function: ease-in-out;
-  transition-duration: 1s;
+  transition-duration: 500ms;
 }
