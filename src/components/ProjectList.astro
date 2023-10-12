@@ -1,0 +1,156 @@
+---
+import "@coreui/icons/css/all.css"
+import { 
+    FaReact,
+    FaLaravel,
+    FaNode,
+    FaHtml5,
+    FaCss3Alt,
+    FaBootstrap
+} from "react-icons/fa";
+import {
+    SiTailwindcss,
+    SiCodeigniter,
+    SiGnubash,
+    SiVuedotjs,
+    SiJavascript,
+    SiMysql,
+    SiSequelize,
+    SiAstro
+} from "react-icons/si"
+
+interface Props {
+    id: string;
+    title: string;
+    tech?: Array<any>;
+    desc?: string;
+    urlGithub?: string;
+    urlDemo?: string;
+    urlImage?: string;
+}
+
+const {
+    id,
+    title,
+    tech,
+    desc,
+    urlGithub,
+    urlDemo,
+    urlImage,
+} = Astro.props
+
+const slug = (title?.toLowerCase()).replace(/\s/g, '-')
+---
+
+<div id="wrapper" class="relative">
+    <a class="block p-2 border-b w-full text-white text-2xl" href={`/projects/${slug}`}>{title}</a>
+
+    <div class="popup flex flex-col absolute -top-full right-0 border-4 rounded-lg text-white">
+        <div class="border-b-4 rounded-lg w-full h-[240px] bg-dark-1">
+            <!-- <img src="/default-image-project.png" class="w-full h-full"/> -->
+        </div>
+        <div class="flex flex-col p-5 gap-7">
+            <div class="flex flex-col gap-3">
+                <div class="flex flex-col gap-7">
+                    <h1 class="text-2xl">{title}</h1>
+                    <div class="flex flex-col gap-5">
+                        <p class="text-lg">Desc:</p>
+                        <p>{desc}</p>
+                    </div>
+                </div>
+                <div id="tech" class="flex items-center gap-5">
+                    <p class="text-lg">Tech:</p>
+                    <div class="flex items-center gap-3">
+                        {tech?.map((item) => {
+                            switch(item){
+                                case 'react':
+                                    return <span class="text-light-2"><FaReact /></span>
+                                case 'nodejs':
+                                    return <span class="text-light-2"><FaNode /></span>
+                                case 'laravel':
+                                    return <span class="text-light-2"><FaLaravel /></span>
+                                case 'html':
+                                    return <span class="text-light-2"><FaHtml5 /></span>
+                                case 'css':
+                                    return <span class="text-light-2"><FaCss3Alt /></span>
+                                case 'bootstrap':
+                                    return <span class="text-light-2"><FaBootstrap /></span>
+                                case 'tailwind':
+                                    return <span class="text-light-2"><SiTailwindcss /></span>
+                                case 'codeigniter':
+                                    return <span class="text-light-2"><SiCodeigniter /></span>
+                                case 'bash':
+                                    return <span class="text-light-2"><SiGnubash /></span>
+                                case 'vue':
+                                    return <span class="text-light-2"><SiVuedotjs /></span>
+                                case 'javascript':
+                                    return <span class="text-light-2"><SiJavascript /></span>
+                                case 'mysql':
+                                    return <span class="text-light-2"><SiMysql /></span>
+                                case 'sequelize':
+                                    return <span class="text-light-2"><SiSequelize /></span>
+                                case 'astro':
+                                    return <span class="text-light-2"><SiAstro /></span>
+                                default:
+                                    return <span class="text-light-2">{item}</span>
+                            }
+                        })}
+                    </div>
+                </div>
+            </div>
+            <div id="url" class="flex items-center gap-7">
+                <a href="#" class="flex gap-5 px-6 py-3 border border-[#B6EADA] rounded-2xl text-light-2">
+                    <i class="cib-github text-2xl"></i>
+                    <span>Code</span>
+                </a>
+                <a href="#" class="flex gap-5 px-6 py-3 border border-[#B6EADA] rounded-2xl text-light-2">
+                    <i class="cil-media-play text-2xl"></i>
+                    <span>Demo</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    div#wrapper > a + div {
+        background-color: #03001C;
+        transition: all;
+        transition-timing-function: ease-in-out;
+        transition-duration: 500ms;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    div#wrapper > a:hover {
+        color: #B6EADA;
+        border-bottom: 1px solid #B6EADA;
+    }
+
+    div#wrapper:hover > a + div{
+        z-index: 100;
+        width: 75%;
+        height: fit-content;
+        visibility: visible;
+        opacity: 1;
+
+    }
+
+    div#wrapper:hover > div > div:first-child {
+        background-image: url('/default-image-project.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    div#url > a {
+        /* background-color: #03001C; */
+        box-shadow: 4px 4px #B6EADA;
+    }
+
+    div#tech span {
+        font-size: 36px;
+    }
+</style>
