@@ -35,12 +35,12 @@ const { title } = Astro.props;
 	<body class={gTheme}>
 		<div class="flex flex-col md:flex-row">
 			<Sidebar />
-			<div id="right-section" class="flex flex-col w-full md:border-l p-4 overflow-x-hidden">
-				<div class="flex justify-between items-center p-1 w-full">
+			<div id="right-section" class="flex flex-col w-full md:border-l overflow-x-hidden">
+				<div class="flex justify-between items-center p-4 w-full">
 					<Breadcrumb />
 					<ToggleTheme client:only="react" />
 				</div>
-				<div id="slot" class="p-3">
+				<div id="slot" class="py-3 h-screen">
 					<slot />
 				</div>
 			</div>
