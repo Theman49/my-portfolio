@@ -27,7 +27,7 @@ const socmed = [
     },
 ]
 ---
-<div class="flex flex-col h-full gap-10 justify-between px-7 py-[80px]">
+<div id="sidebar" class="flex flex-col h-full gap-10 justify-between px-7 py-[80px]">
     <div class="flex flex-col items-center gap-6">
         <img src="/logo.png" class="w-[150px] h-[150px]">
         <div class="flex flex-col items-center text-white">
@@ -45,25 +45,25 @@ const socmed = [
 
     <div id="link" class="flex flex-col">
         <a href="/" class={page === 'home' || page === '' ? 'active' : ''}>
-            <div class="flex gap-2 text-white">
+            <div class="flex gap-2">
                 <i class="cil-home text-[24px]"></i>
                 <p>Home</p>
             </div>
         </a>
         <a href="/projects" class={page === 'projects' ? 'active' : ''}>
-            <div class="flex gap-2 text-white">
+            <div class="flex gap-2">
                 <i class="cil-briefcase text-[24px]"></i>
                 <p>Projects</p>
             </div>
         </a>
         <a href="/skills"class={page === 'skills' ? 'active' : ''}>
-            <div class="flex gap-2 text-white">
+            <div class="flex gap-2">
                 <i class="cil-tags text-[24px]"></i>
                 <p>Skills</p>
             </div>
         </a>
         <a href="/about-me"class={page === 'about-me' ? 'active' : ''}>
-            <div class="flex gap-2 text-white">
+            <div class="flex gap-2">
                 <i class="cil-info text-[24px]"></i>
                 <p>About Me</p>
             </div>
@@ -72,12 +72,17 @@ const socmed = [
 </div>
 
 <style>
+    #sidebar {
+        font-family: 'Kurale', serif;
+    }
     #link div {
+        color: white;
         border-bottom: 1px solid white;
         padding: 16px 0px;
         align-items: center;
     }
-    #link div:hover,
+
+    #link div:hover, 
     #link a.active > div {
         color: #B6EADA;
     }
