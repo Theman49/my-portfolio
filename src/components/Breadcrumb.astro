@@ -1,0 +1,18 @@
+---
+const pathname = new URL(Astro.request.url).pathname
+const breadcrumbValues = (pathname.split('/')).slice(1)
+const lastBreadcrumbValue = breadcrumbValues[breadcrumbValues.length - 1]
+---
+
+<div class="flex gap-1 text-white">
+    <a href="/">Home</a>
+    {breadcrumbValues.map((item) => {
+        const genHref = '/' + item
+        const genItem = item.charAt(0).toUpperCase() + item.slice(1)
+        const genClass = item === lastBreadcrumbValue ? 'text-light-2' : 'text-white'
+        return item !== '' ? (
+            <p>/</p>
+            <a href={genHref} class={genClass}>{genItem}</a>
+        ) : ''
+    })}
+</div>
