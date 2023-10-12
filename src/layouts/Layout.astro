@@ -2,6 +2,7 @@
 import "@/styles/globals.css"
 import Sidebar from '@/components/Sidebar.astro'
 import ToggleTheme from '@/components/ToggleTheme.jsx'
+import Breadcrumb from '@/components/Breadcrumb.astro'
 import { ViewTransitions } from 'astro:transitions';
 import {theme} from '@/store'
 
@@ -34,11 +35,12 @@ const { title } = Astro.props;
 	<body class={gTheme}>
 		<div class="flex flex-col md:flex-row">
 			<Sidebar />
-			<div class="flex flex-col w-full md:border-l p-4">
-				<div class="flex justify-end p-1 w-full">
+			<div id="right-section" class="flex flex-col w-full md:border-l p-4 overflow-x-hidden">
+				<div class="flex justify-between items-center p-1 w-full">
+					<Breadcrumb />
 					<ToggleTheme client:only="react" />
 				</div>
-				<div class="p-3">
+				<div id="slot" class="p-3">
 					<slot />
 				</div>
 			</div>
@@ -50,12 +52,29 @@ const { title } = Astro.props;
 	const theme = localStorage.getItem('theme')
 	document.querySelector('body').className = `bg-${theme}-1`
 </script> -->
+<style>
+	#right-section::-webkit-scrollbar {
+		display: none;
+	}
+</style>
 
 <style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+	@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+
 	body {
+		transition: all;
+		transition-timing-function: ease-in-out;
+		transition-duration: 500ms;
+
 		background-image: url('/bg-right-bottom.png');
 		background-repeat: no-repeat;
 		background-position: right bottom;
+	}
+
+	#slot * {
+		font-family: 'Grandstander', cursive;
 	}
 
 	@media screen and (max-width: 365px){
