@@ -1,0 +1,253 @@
+---
+
+import { 
+    FaReact,
+    FaLaravel,
+    FaNode,
+    FaHtml5,
+    FaCss3Alt,
+    FaBootstrap
+} from "react-icons/fa";
+import {
+    SiTailwindcss,
+    SiCodeigniter,
+    SiGnubash,
+    SiVuedotjs,
+    SiJavascript,
+    SiMysql,
+    SiSequelize,
+    SiAstro,
+    SiLinux,
+} from "react-icons/si"
+
+import Layout from '@/layouts/Layout.astro'
+import projectDatas from '@/data.json'
+
+export function getStaticPaths() {
+  return projectDatas.map((item) => {
+    const slug = ((item.title).toLowerCase()).replace(/\s/g, '-')
+    return {params: {project: slug}}
+  })
+}
+
+const { project } = Astro.params;
+
+const data = projectDatas.filter((item) => {
+    const slug = ((item.title).toLowerCase()).replace(/\s/g, '-')
+    if(slug === project){
+        return item
+    }
+})[0]
+---
+<Layout title={data.title || ''}>
+    <div class="flex flex-col gap-6 p-4">
+        <div class="flex justify-between items-center text-white">
+            <div class="flex flex-col md:flex-row md:items-baseline gap-1">
+                <h1 class="text-2xl">{data.title}</h1>
+                <p class="text-base">({data.type} project)</p>
+            </div>
+            <div id="url" class="flex items-center justify-between md:justify-start md:gap-7">
+                <a href="#" class="flex gap-3 md:gap-5 px-3 py-1 md:px-6 md:py-3 border border-[#B6EADA] rounded-2xl text-light-2">
+                    <i class="cib-github text-lg md:text-2xl"></i>
+                    <span>Code</span>
+                </a>
+                {data.urlDemo && <a href="#" class="flex gap-3 md:gap-5 px-3 py-1 md:px-6 md:py-3 border border-[#B6EADA] rounded-2xl text-light-2">
+                        <i class="cil-media-play text-lg md:text-2xl"></i>
+                        <span>Demo</span>
+                    </a>
+                }
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row text-white gap-4 w-full">
+            <div id="tech" class="flex flex-col md:items-start gap-2 md:w-1/4">
+                <p class="text-lg text-bold">Tech:</p>
+                <div class="flex flex-wrap items-center gap-3">
+                    {data.tech?.map((item) => {
+                        const label = item.charAt(0).toUpperCase() + item.slice(1)
+                        switch(item){
+                            case 'react':
+                                return <div class="flex items-center gap-2">
+                                    <span class="text-light-2"><FaReact />
+                                        </span>
+                                        <span class="label">
+                                            {label}
+                                        </span>
+                                    </div>
+                            case 'nodejs':
+                                return <div class="flex items-center gap-2">
+                                    <span class="text-light-2"><FaNode />
+                                    </span>
+                                    <span class="label">
+                                        {label}
+                                    </span>
+                                </div>
+                            case 'laravel':
+                                return <div class="flex items-center gap-2">
+                                    <span class="text-light-2"><FaLaravel />
+                                    </span>
+                                    <span class="label">
+                                        {label}
+                                    </span>
+                                </div>
+                            case 'html':
+                                return <div class="flex items-center gap-2">
+                                    <span class="text-light-2"><FaHtml5 />
+                                    </span>
+                                    <span class="label">
+                                        {label}
+                                    </span>
+                                </div>
+                            case 'css':
+                                return <div class="flex items-center gap-2">
+                                    <span class="text-light-2"><FaCss3Alt />
+                                    </span>
+                                    <span class="label">
+                                        {label}
+                                    </span>
+                                </div>
+                            case 'bootstrap':
+                                return <div class="flex items-center gap-2">
+                                    <span class="text-light-2"><FaBootstrap />
+                                    </span>
+                                    <span class="label">
+                                        {label}
+                                    </span>
+                                </div>
+                            case 'tailwind':
+                                return <div class="flex items-center gap-2">
+                                    <span class="text-light-2"><SiTailwindcss />
+                                    </span>
+                                    <span class="label">
+                                        {label}
+                                    </span>
+                                </div>
+                            case 'codeigniter':
+                                return <div class="flex items-center gap-2">
+                                    <span class="text-light-2"><SiCodeigniter />
+                                    </span>
+                                    <span class="label">
+                                        {label}
+                                    </span>
+                                </div>
+                            case 'bash':
+                                return <div class="flex items-center gap-2">
+                                    <span class="text-light-2"><SiGnubash />
+                                    </span>
+                                    <span class="label">
+                                        {label}
+                                    </span>
+                                </div>
+                            case 'vue':
+                                return <div class="flex items-center gap-2">
+                                    <span class="text-light-2"><SiVuedotjs />
+                                    </span>
+                                    <span class="label">
+                                        {label}
+                                    </span>
+                                </div>
+                            case 'javascript':
+                                return <div class="flex items-center gap-2">
+                                    <span class="text-light-2"><SiJavascript />
+                                    </span>
+                                    <span class="label">
+                                        {label}
+                                    </span>
+                                </div>
+                            case 'mysql':
+                                return <div class="flex items-center gap-2">
+                                    <span class="text-light-2"><SiMysql />
+                                    </span>
+                                    <span class="label">
+                                        {label}
+                                    </span>
+                                </div>
+                            case 'sequelize':
+                                return <div class="flex items-center gap-2">
+                                    <span class="text-light-2"><SiSequelize />
+                                    </span>
+                                    <span class="label">
+                                        {label}
+                                    </span>
+                                </div>
+                            case 'astro':
+                                return <div class="flex items-center gap-2">
+                                    <span class="text-light-2"><SiAstro />
+                                    </span>
+                                    <span class="label">
+                                        {label}
+                                    </span>
+                                </div>
+                            case 'linux':
+                                return <div class="flex items-center gap-2">
+                                    <span class="text-light-2"><SiLinux />
+                                    </span>
+                                    <span class="label">
+                                        {label}
+                                    </span>
+                                </div>
+                            default:
+                                return <div class="flex items-center gap-2">
+                                    <span class="text-light-2">
+                                    </span>
+                                    <span class="label">
+                                        {label}
+                                    </span>
+                                </div>
+                        }
+                    })}
+                </div>
+            </div>
+            <div class="flex flex-col gap-2 md:border-l md:pl-4 w-full">
+                <p class="text-lg text-bold">Desc:</p>
+                <p class="text-justify text-base md:text-sm">{data.desc}</p>
+            </div>
+        </div>        
+    </div>
+    <div id={`project-images-${data.id}`} class="w-full overflow-x-auto py-5">
+        <div class="flex gap-5 ml-4">
+            <img src="/default-image-project.png" class="w-[620px] h-[290px] md:h-[390px] border-4 rounded-xl" />
+            <img src="/default-image-project.png" class="w-[620px] h-[290px] md:h-[390px] border-4 rounded-xl" />
+            <img src="/default-image-project.png" class="w-[620px] h-[290px] md:h-[390px] border-4 rounded-xl" />
+
+        </div>
+    </div>
+
+</Layout>
+
+<style>
+    div#tech span {
+        font-size: 28px;
+    }
+
+    div#tech span.label {
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 425px){
+        div#tech span {
+            font-size: 20px;
+        }
+
+        div#tech span.label {
+            font-size: 14px;
+        }
+
+        div#url > a {
+        /* background-color: #03001C; */
+        box-shadow: 2px 2px #B6EADA;
+    }
+    }
+
+    #project-images::-webkit-scrollbar {
+        display: none;
+    }
+    
+</style>
+
+<script define:vars={{ id: data.id}}>
+    const projectImages = document.getElementById('project-images-'+ id)
+    projectImages?.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        projectImages.scrollLeft += evt.deltaY;
+    });
+</script>
