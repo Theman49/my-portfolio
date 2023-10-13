@@ -2,8 +2,9 @@
     {
         "id": "1",
         "title": "Yukprivate",
+        "type": "web",
         "tech": ["react", "tailwind", "mysql", "sequelize", "nodejs"],
-        "desc": "",
+        "desc": "Yukprivate is website for rent tentor online in semarang area. User can register as students or tentor in here. Student can find tentor to teach them on their house. Not only student that use this system, but also the tentor. The tentor can setting their schedule, course, online of offline, and others. In this system also including payment with using payment gateway of midtrans.",
         "urlGithub": "",
         "urlDemo": "",
         "urlImages": [
@@ -14,6 +15,7 @@
     {
         "id": "2",
         "title": "Home Buy Now",
+        "type": "web",
         "tech": ["laravel", "bootstrap", "mysql"],
         "desc": "",
         "urlGithub": "",
@@ -26,6 +28,7 @@
     {
         "id": "3",
         "title": "My Portfolio",
+        "type": "web",
         "tech": ["astro", "tailwind", "react"],
         "desc": "",
         "urlGithub": "",
@@ -38,6 +41,7 @@
     {
         "id": "4",
         "title": "PKKMB FMIPA UNNES 2021",
+        "type": "web",
         "tech": ["codeigniter", "bootstrap", "mysql"],
         "desc": "",
         "urlGithub": "",
@@ -50,6 +54,7 @@
     {
         "id": "5",
         "title": "MIPA FAIR UNNES",
+        "type": "web",
         "tech": ["laravel", "bootstrap", "mysql"],
         "desc": "",
         "urlGithub": "",
@@ -62,9 +67,36 @@
     {
         "id": "6",
         "title": "Bisatani Frontend Mobile",
+        "type": "web",
         "tech": ["html", "css", "javascript"],
         "desc": "",
         "urlGithub": "",
+        "urlDemo": "",
+        "urlImages": [
+            "",
+            ""
+        ]
+    },
+    {
+        "id": "7",
+        "title": "Japanese-Indonesia Dictionary",
+        "type": "CLI",
+        "tech": ["bash"],
+        "desc": "This program was build to easier my learning japanese language. This program contains the grammars and vocabularies of japanese language from N5 until N4 chapter 8. Search program accept one parameter and return kanji and hiragana.",
+        "urlGithub": "https://github.com/Theman49/japanese-indonesia-dictionary.git",
+        "urlDemo": "",
+        "urlImages": [
+            "",
+            ""
+        ]
+    },
+    {
+        "id": "8",
+        "title": "RTCWAKE Linux",
+        "type": "CLI",
+        "tech": [ "linux", "bash"],
+        "desc": "This program build with bash script and used for auto wakeup laptop when the power is off. We can set spesific time when it will be wake up. This idea is come out when we always need to press power button on laptop to turn it on. If we use laptop as a normal without using monitor it's no issue, but the problem is when our laptop we use as a dock when using monitor. At this moment, we need to take laptop out from dock and open the lid. With this program we can automatic wakeup withot pressing the power button.",
+        "urlGithub": "https://github.com/Theman49/japanese-indonesia-dictionary.git",
         "urlDemo": "",
         "urlImages": [
             "",
