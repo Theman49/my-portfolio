@@ -1,10 +1,49 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import ComingSoon from '@/components/ComingSoon.astro'
+import {
+    FaWhatsapp,
+} from 'react-icons/fa'
+
+import {
+    AiOutlineMail,
+} from 'react-icons/ai'
+
+const WA = 'https://wa.me/+6285729331669'
+const EMAIL = 'cakdeny49@gmail.com'
 ---
 
 <Layout title="About Me">
-    <div class="px-4 h-full">
-        <ComingSoon />
+    <div class="flex flex-col p-8 gap-4">
+        <div class="flex justify-center items-center gap-4 md:gap-8 px-4 h-full">
+            <img src="/profile-bordered.png" class="w-[250px] h-full"/>
+            <div class="hidden md:flex flex-col gap-5">
+                <h1 class="text-2xl text-white">Contact me :</h1>
+                <div class="flex flex-col gap-2">
+                    <a href={WA} class="cta flex items-center gap-3 bg-[#B6EADA] px-6 py-4 rounded-lg">
+                        <span class="text-2xl"><FaWhatsapp /></span>
+                        <p>+62 857 2933 1669</p>
+                    </a>
+                    <a href={EMAIL} class="cta flex items-center gap-3 bg-[#B6EADA] px-6 py-4 rounded-lg">
+                        <span class="text-2xl"><AiOutlineMail /></span>
+                        <p>cakdeny49@gmail.com</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="text-justify text-white">Hello... my name is Deny Lukman Syarif. I’m web developer and have experience more than 3 years as web developer. I’m using Linux for my daily driver since 2020 since i know it’s freely to use, open source so it’s customizable and have a lot of distro that has unique in each distro. I’m very like challenge and always to learn something new.</p>
+
+        <div class="flex md:hidden flex-col gap-5">
+            <h1 class="text-2xl text-white">Contact me :</h1>
+            <div class="flex flex-col gap-2">
+                <a href={WA} class="cta flex items-center gap-3 bg-[#B6EADA] px-6 py-4 rounded-lg">
+                    <span class="text-2xl"><FaWhatsapp /></span>
+                    <p>+62 857 2933 1669</p>
+                </a>
+                <a href={EMAIL} class="cta flex items-center gap-3 bg-[#B6EADA] px-6 py-4 rounded-lg">
+                    <span class="text-2xl"><AiOutlineMail /></span>
+                    <p>cakdeny49@gmail.com</p>
+                </a>
+            </div>
+        </div>
     </div>
 </Layout>

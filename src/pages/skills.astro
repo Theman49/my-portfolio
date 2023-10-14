@@ -4,7 +4,106 @@ import ComingSoon from '@/components/ComingSoon.astro'
 ---
 
 <Layout title="Skills">
-    <div class="px-4 h-full">
-        <ComingSoon />
+    <div class="p-4 md:p-8 h-full">
+        <div id="skills-container" class="flex flex-wrap justify-between gap-8">
+
+            <div class="flex flex-col gap-5 text-white w-full md:w-1/4">
+                <div class="w-fit relative">
+                    <h1 class="text-3xl">Frontend</h1>
+                    <img src="/border-bottom-skills-header.svg" class="w-full absolute -bottom-[20%]" >
+                </div>
+                <div class="flex flex-wrap gap-4 pb-4">
+                    <p>Html</p>
+                    <p>Css</p>
+                    <p>Javascript</p>
+                    <p>Php</p>
+                    <p>React</p>
+                    <p>Vue</p>
+                    <p>Tailwind</p>
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-5 text-white">
+                <div class="w-fit relative">
+                    <h1 class="text-3xl">Backend</h1>
+                    <img src="/border-bottom-skills-header.svg" class="w-full absolute -bottom-[20%]" >
+                </div>
+                <div class="flex flex-col gap-3">
+                    <p>Laravel</p>
+                    <p>NodeJs</p>
+                    <p>Rest API</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-5 text-white">
+                <div class="w-fit relative">
+                    <h1 class="text-3xl">Database</h1>
+                    <img src="/border-bottom-skills-header.svg" class="w-full absolute -bottom-[20%]" >
+                </div>
+                <div class="flex flex-col gap-3">
+                    <p>Mysql</p>
+                    <p>Postgresql</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-5 text-white">
+                <div class="w-fit relative">
+                    <h1 class="text-3xl">Server</h1>
+                    <img src="/border-bottom-skills-header.svg" class="w-full absolute -bottom-[20%]" >
+                </div>
+                <div class="flex flex-col gap-3">
+                    <p>Nginx</p>
+                    <p>Apache</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-5 text-white">
+                <div class="w-fit relative">
+                    <h1 class="text-3xl">CI/CD</h1>
+                    <img src="/border-bottom-skills-header.svg" class="w-full absolute -bottom-[20%]" >
+                </div>
+                <div class="flex flex-col gap-3">
+                    <p>Git</p>
+                    <p>Github</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-5 text-white">
+                <div class="w-fit relative">
+                    <h1 class="text-3xl">Others</h1>
+                    <img src="/border-bottom-skills-header.svg" class="w-full absolute -bottom-[20%]" >
+                </div>
+                <div class="flex flex-col gap-3">
+                    <p>Linux</p>
+                    <p>Bash/Shell</p>
+                </div>
+            </div>
+
+        </div>
     </div>
 </Layout>
+
+<style>
+    #skills-container > div:not(:first-child) {
+        padding-right: 96px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    p {
+        font-size: 32px;
+    }
+
+    @media screen and (max-width: 425px){
+        #skills-container > div:not(:first-child) {
+            padding-right: 0px;
+        }
+        h1 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+</style>
