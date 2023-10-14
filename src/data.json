@@ -5,7 +5,7 @@
         "type": "web",
         "tech": ["react", "tailwind", "mysql", "sequelize", "nodejs"],
         "desc": "Yukprivate is website for rent tentor online in semarang area. User can register as students or tentor in here. Student can find tentor to teach them on their house. Not only student that use this system, but also the tentor. The tentor can setting their schedule, course, online of offline, and others. In this system also including payment with using payment gateway of midtrans.",
-        "urlGithub": "",
+        "urlGithub": "https://github.com/Theman49/yukprivate.git",
         "urlDemo": "",
         "urlImages": [
             "",
@@ -17,8 +17,8 @@
         "title": "Home Buy Now",
         "type": "web",
         "tech": ["laravel", "bootstrap", "mysql"],
-        "desc": "",
-        "urlGithub": "",
+        "desc": "Home Buy Now is website for selling house in JABODETABEK",
+        "urlGithub": "https://github.com/Theman49/home-buy-now.git",
         "urlDemo": "",
         "urlImages": [
             "",
@@ -31,8 +31,8 @@
         "type": "web",
         "tech": ["astro", "tailwind", "react"],
         "desc": "",
-        "urlGithub": "",
-        "urlDemo": "",
+        "urlGithub": "https://github.com/Theman49/my-portfolio.git",
+        "urlDemo": "https://vercel.com/new/theman49s-projects",
         "urlImages": [
             "",
             ""
@@ -43,8 +43,8 @@
         "title": "PKKMB FMIPA UNNES 2021",
         "type": "web",
         "tech": ["codeigniter", "bootstrap", "mysql"],
-        "desc": "",
-        "urlGithub": "",
+        "desc": "PKKMB FMIPA is a website for new student at fmipa unnes 2021. This website contain information of the activity that will be held. Also as task management that need to complete by new student.",
+        "urlGithub": "https://github.com/Theman49/pkkmb-fmipa-2021.git",
         "urlDemo": "",
         "urlImages": [
             "",
@@ -56,8 +56,8 @@
         "title": "MIPA FAIR UNNES",
         "type": "web",
         "tech": ["laravel", "bootstrap", "mysql"],
-        "desc": "",
-        "urlGithub": "",
+        "desc": "MIPA FAIR UNNES is a website information about event that held by leader bem of FMIPA. It contains of live youtube cause the event held on pandemic",
+        "urlGithub": "https://github.com/Theman49/mipa-fair-unnes.git",
         "urlDemo": "",
         "urlImages": [
             "",
@@ -69,9 +69,9 @@
         "title": "Bisatani Frontend Mobile",
         "type": "web",
         "tech": ["html", "css", "javascript"],
-        "desc": "",
-        "urlGithub": "",
-        "urlDemo": "",
+        "desc": "Bisatani is a website to control farmer activity including where the location of his land, when the land need to watery, when harvesting, and other",
+        "urlGithub": "https://github.com/Theman49/bisatani-frontend.git",
+        "urlDemo": "https://bisatani-frontend.vercel.app",
         "urlImages": [
             "",
             ""
