@@ -4,7 +4,7 @@ import ProjectList from '@/components/ProjectList.astro'
 import ProjectDatas from '@/data.json'
 ---
 <Layout title="Projects">
-    <div class="flex flex-col gap-2 px-4">
+    <div class="flex flex-col gap-2 px-4 pb-8 md:pb-0">
         {ProjectDatas.map((item) => {
             return (
                 <ProjectList 
@@ -12,6 +12,8 @@ import ProjectDatas from '@/data.json'
                     title={item.title}
                     type={item.type}
                     tech={item.tech} 
+                    urlGithub={item.urlGithub} 
+                    urlDemo={item.urlDemo} 
                     desc={item.desc}
                 />
             )

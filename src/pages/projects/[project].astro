@@ -46,12 +46,12 @@ const data = projectDatas.filter((item) => {
                 <h1 class="text-2xl">{data.title}</h1>
                 <p class="text-base">({data.type} project)</p>
             </div>
-            <div id="url" class="flex items-center justify-between md:justify-start md:gap-7">
-                <a href="#" class="flex gap-3 md:gap-5 px-3 py-1 md:px-6 md:py-3 border border-[#B6EADA] rounded-2xl text-light-2">
+            <div id="url" class="flex flex-col md:flex-row items-center justify-between md:justify-start gap-2 md:gap-7">
+                <a href={data.urlGithub} target="blank" class="flex gap-3 md:gap-5 px-3 py-1 md:px-6 md:py-3 border border-[#B6EADA] rounded-2xl text-light-2">
                     <i class="cib-github text-lg md:text-2xl"></i>
                     <span>Code</span>
                 </a>
-                {data.urlDemo && <a href="#" class="flex gap-3 md:gap-5 px-3 py-1 md:px-6 md:py-3 border border-[#B6EADA] rounded-2xl text-light-2">
+                {data.urlDemo && <a href={data.urlDemo} target="blank" class="flex gap-3 md:gap-5 px-3 py-1 md:px-6 md:py-3 border border-[#B6EADA] rounded-2xl text-light-2">
                         <i class="cil-media-play text-lg md:text-2xl"></i>
                         <span>Demo</span>
                     </a>
@@ -234,8 +234,9 @@ const data = projectDatas.filter((item) => {
 
         div#url > a {
         /* background-color: #03001C; */
-        box-shadow: 2px 2px #B6EADA;
-    }
+            box-shadow: 2px 2px #B6EADA;
+        }
+
     }
 
     #project-images::-webkit-scrollbar {
