@@ -44,7 +44,8 @@ const {
 } = Astro.props
 
 const slug = (title?.toLowerCase()).replace(/\s/g, '-')
-const trunctDesc = desc ? truncate(desc ,500) : ''
+const trunctDescMobile = desc ? truncate(desc ,100) : ''
+const trunctDescDesktop = desc ? truncate(desc ,500) : ''
 ---
 
 <div id={`wrapper-${id}`} class="wrapper relative">
@@ -68,7 +69,8 @@ const trunctDesc = desc ? truncate(desc ,500) : ''
                     </div>
                     <div class="flex flex-col gap-2">
                         <p class="text-lg text-bold">Desc:</p>
-                        <p class="text-justify text-base md:text-sm">{trunctDesc}</p>
+                        <p id="truncMobile" class="block md:hidden text-justify text-base md:text-sm">{trunctDescMobile}</p>
+                        <p id="truncDesktop" class="hidden md:block text-justify text-base md:text-sm">{trunctDescDesktop}</p>
                     </div>
                 </div>
                 <div id="tech" class="flex flex-col md:flex-row md:items-start gap-2">
@@ -211,11 +213,11 @@ const trunctDesc = desc ? truncate(desc ,500) : ''
                 </div>
             </div>
             <div id="url" class="flex items-center justify-between md:justify-start md:gap-7">
-                <a href="#" class="flex gap-3 md:gap-5 px-3 py-1 md:px-6 md:py-3 border border-[#B6EADA] rounded-2xl text-light-2">
+                <a href={urlGithub} target="blank" class="flex gap-3 md:gap-5 px-3 py-1 md:px-6 md:py-3 border border-[#B6EADA] rounded-2xl text-light-2">
                     <i class="cib-github text-lg md:text-2xl"></i>
                     <span>Code</span>
                 </a>
-                {urlDemo && <a href="#" class="flex gap-3 md:gap-5 px-3 py-1 md:px-6 md:py-3 border border-[#B6EADA] rounded-2xl text-light-2">
+                {urlDemo && <a href={urlDemo} target="blank" class="flex gap-3 md:gap-5 px-3 py-1 md:px-6 md:py-3 border border-[#B6EADA] rounded-2xl text-light-2">
                         <i class="cil-media-play text-lg md:text-2xl"></i>
                         <span>Demo</span>
                     </a>
@@ -265,7 +267,9 @@ const trunctDesc = desc ? truncate(desc ,500) : ''
         font-size: 16px;
     }
 
+
     @media screen and (max-width: 425px){
+
         div#tech span {
             font-size: 20px;
         }
@@ -276,15 +280,16 @@ const trunctDesc = desc ? truncate(desc ,500) : ''
 
         div#url > a {
         /* background-color: #03001C; */
-        box-shadow: 2px 2px #B6EADA;
-    }
+            box-shadow: 2px 2px #B6EADA;
+        }
     }
 </style>
 <script define:vars={{ id }}>
-    const wrapper = document.querySelector(`#wrapper-${id} > a`)
+    const wrapper = document.querySelector(`#wrapper-${id}`)
+    const wrapperA = document.querySelector(`#wrapper-${id} > a`)
     wrapper?.addEventListener('mouseover', function() {
         const popup = document.querySelector(`#wrapper-${id} > a + div`)
-        const wY = Math.floor(wrapper?.getBoundingClientRect().y)
+        const wY = Math.floor(wrapperA?.getBoundingClientRect().y)
         popup.style.top = `-${wY}px`
         console.log(popup.style.top)
     })
