@@ -6,7 +6,7 @@
         "tech": ["react", "tailwind", "mysql", "sequelize", "nodejs"],
         "desc": "Yukprivate is website for rent tentor online in semarang area. User can register as students or tentor in here. Student can find tentor to teach them on their house. Not only student that use this system, but also the tentor. The tentor can setting their schedule, course, online of offline, and others. In this system also including payment with using payment gateway of midtrans.",
         "urlGithub": "https://github.com/Theman49/yukprivate.git",
-        "urlDemo": "",
+        "urlDemo": "https://yukprivate.cakdeny49.my.id",
         "urlImages": [
             "",
             ""
@@ -19,7 +19,7 @@
         "tech": ["laravel", "bootstrap", "mysql"],
         "desc": "Home Buy Now is website for selling house in JABODETABEK",
         "urlGithub": "https://github.com/Theman49/home-buy-now.git",
-        "urlDemo": "",
+        "urlDemo": "https://homebuynow.cakdeny49.my.id",
         "urlImages": [
             "",
             ""
@@ -32,7 +32,7 @@
         "tech": ["astro", "tailwind", "react"],
         "desc": "",
         "urlGithub": "https://github.com/Theman49/my-portfolio.git",
-        "urlDemo": "https://vercel.com/new/theman49s-projects",
+        "urlDemo": "https://cakdeny49.my.id",
         "urlImages": [
             "",
             ""
@@ -45,7 +45,7 @@
         "tech": ["codeigniter", "bootstrap", "mysql"],
         "desc": "PKKMB FMIPA is a website for new student at fmipa unnes 2021. This website contain information of the activity that will be held. Also as task management that need to complete by new student.",
         "urlGithub": "https://github.com/Theman49/pkkmb-fmipa-2021.git",
-        "urlDemo": "",
+        "urlDemo": "https://pkkmbfmipaunnes.cakdeny49.my.id",
         "urlImages": [
             "",
             ""
@@ -58,7 +58,7 @@
         "tech": ["laravel", "bootstrap", "mysql"],
         "desc": "MIPA FAIR UNNES is a website information about event that held by leader bem of FMIPA. It contains of live youtube cause the event held on pandemic",
         "urlGithub": "https://github.com/Theman49/mipa-fair-unnes.git",
-        "urlDemo": "",
+        "urlDemo": "https://mipafairunnes.cakdeny49.my.id",
         "urlImages": [
             "",
             ""
