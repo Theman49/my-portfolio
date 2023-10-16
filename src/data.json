@@ -4,12 +4,25 @@
         "title": "Yukprivate",
         "type": "web",
         "tech": ["react", "tailwind", "mysql", "sequelize", "nodejs"],
-        "desc": "Yukprivate is website for rent tentor online in semarang area. User can register as students or tentor in here. Student can find tentor to teach them on their house. Not only student that use this system, but also the tentor. The tentor can setting their schedule, course, online of offline, and others. In this system also including payment with using payment gateway of midtrans.",
+        "desc": "Yukprivate is website for rent tentor online in semarang area. User can register as students or tentor in here. Student can find tentor to teach them on their house. Not only student that use this system, but also the tentor. The tentor can setting their schedule, course, online of offline, and others. In this system also including payment with using payment gateway of midtrans. If you want to try live demo you can click <b>demo button</b> at top right. Feel free to explore :)<br/><br/>Student account demo:<br>username: <b>student@gmail.com</b> and password: <b>password</b> <br/>Tentor account demo:<br>username: <b>adi@gmail.com</b> and password: <b>password</b>",
         "urlGithub": "https://github.com/Theman49/yukprivate.git",
         "urlDemo": "https://yukprivate.cakdeny49.my.id",
-        "urlImages": [
-            "",
-            ""
+        "images": [
+            {
+                "src": "/images/yukprivate/1.png",
+                "alt": "home yukprivate",
+                "desc": "<b>Home Page</b> >> This is how home page from yukprivate looks like. In this page we can now about what inside in yukprivate witch scorlling down in this page."
+            },
+            {
+                "src": "/images/yukprivate/2.png",
+                "alt": "tentor yukprivate",
+                "desc": "<b>Tentor Page</b> >> Here we can explore tentors that suitable with me. We can also search by the course and tentor locations. To view the detail of tentor we can click the card."
+            },
+            {
+                "src": "/images/yukprivate/3.png",
+                "alt": "login yukprivate",
+                "desc": "<b>Login Page</b> >> In here we can login to the system as student or tentor. I've prepared some account demo if you want to try the system at desc above;. Or if you prefer to create your own account it's also possible through registration page."
+            }
         ]
     },
     {
@@ -17,12 +30,25 @@
         "title": "Home Buy Now",
         "type": "web",
         "tech": ["laravel", "bootstrap", "mysql"],
-        "desc": "Home Buy Now is website for selling house in JABODETABEK",
+        "desc": "Home Buy Now is website for selling house in JABODETABEK. This website also include admin system to control house property like add new house, edit house information, delete house, and others. This also contain wa contact if you want to talk about the house directly to the owner. If you want to try live demo you can click <b>demo button</b> at top right. Feel free to explore :)<br><br>Note: if you want to try system admin you can contact me <a class='text-lg font-bold' href='/about-me'>here :)</a>",
         "urlGithub": "https://github.com/Theman49/home-buy-now.git",
         "urlDemo": "https://homebuynow.cakdeny49.my.id",
-        "urlImages": [
-            "",
-            ""
+        "images": [
+            {
+                "src": "/images/homebuynow/1.png",
+                "alt": "home homebuynow",
+                "desc": "<b>Home Page</b> >> This page shows few recommended house to user."
+            },
+            {
+                "src": "/images/homebuynow/2.png",
+                "alt": "catalog homebuynow",
+                "desc": "<b>Catalog Page</b> >> This page contains information about house that can be filtered to easier finding house that suitable with your requirement. The filter consists of type primary or secondary, location , and the prices."
+            },
+            {
+                "src": "/images/homebuynow/3.png",
+                "alt": "detail homebuynow",
+                "desc": "<b>Detail Page</b> >> This page show more details information of house, more pictures and more spesification about the house."
+            }
         ]
     },
     {
@@ -33,22 +59,37 @@
         "desc": "",
         "urlGithub": "https://github.com/Theman49/my-portfolio.git",
         "urlDemo": "https://cakdeny49.my.id",
-        "urlImages": [
-            "",
-            ""
-        ]
+        "images": []
     },
     {
         "id": "4",
         "title": "PKKMB FMIPA UNNES 2021",
         "type": "web",
         "tech": ["codeigniter", "bootstrap", "mysql"],
-        "desc": "PKKMB FMIPA is a website for new student at fmipa unnes 2021. This website contain information of the activity that will be held. Also as task management that need to complete by new student.",
+        "desc": "PKKMB FMIPA is a website for new student at fmipa unnes 2021. This website contain information of the activity that will be held. Also as task management that need to complete by new student. This system using connection to google drive to upload task that need to have done by students to complete the event. If you want to try live demo you can click <b>demo button</b> at top right. Feel free to explore :)<br/><br/>account demo:<br>username: <b>user@gmail.com</b> and password: <b>1234567890</b>",
         "urlGithub": "https://github.com/Theman49/pkkmb-fmipa-2021.git",
         "urlDemo": "https://pkkmbfmipaunnes.cakdeny49.my.id",
-        "urlImages": [
-            "",
-            ""
+        "images": [
+            {
+                "src": "/images/pkkmbfmipaunnes/1.png",
+                "alt": "home pkkmbfmipaunnes",
+                "desc": "<b>Home Page</b> >> This is home page when user visit the website. In here user can take a look what is pkkmb fmipa unnes."
+            },
+            {
+                "src": "/images/pkkmbfmipaunnes/2.png",
+                "alt": "information pkkmbfmipaunnes",
+                "desc": "<b>Information Page</b> >> This page contains information about the timeline, guide books, presence, song, and others."
+            },
+            {
+                "src": "/images/pkkmbfmipaunnes/3.png",
+                "alt": "assignments pkkmbfmipaunnes",
+                "desc": "<b>Assignment Page</b> >> This page used for student to upload their assignment according to their group automatically."
+            },
+            {
+                "src": "/images/pkkmbfmipaunnes/4.png",
+                "alt": "epresensi pkkmbfmipaunnes",
+                "desc": "<b>Presence Page</b> >> This page used for student to presence when they following all events. To get here, we can go to information page, and go to menu presence."
+            }
         ]
     },
     {
@@ -59,10 +100,7 @@
         "desc": "MIPA FAIR UNNES is a website information about event that held by leader bem of FMIPA. It contains of live youtube cause the event held on pandemic",
         "urlGithub": "https://github.com/Theman49/mipa-fair-unnes.git",
         "urlDemo": "https://mipafairunnes.cakdeny49.my.id",
-        "urlImages": [
-            "",
-            ""
-        ]
+        "images": []
     },
     {
         "id": "6",
@@ -72,10 +110,7 @@
         "desc": "Bisatani is a website to control farmer activity including where the location of his land, when the land need to watery, when harvesting, and other",
         "urlGithub": "https://github.com/Theman49/bisatani-frontend.git",
         "urlDemo": "https://bisatani-frontend.vercel.app",
-        "urlImages": [
-            "",
-            ""
-        ]
+        "images": []
     },
     {
         "id": "7",
@@ -85,10 +120,7 @@
         "desc": "This program was build to easier my learning japanese language. This program contains the grammars and vocabularies of japanese language from N5 until N4 chapter 8. Search program accept one parameter and return kanji and hiragana.",
         "urlGithub": "https://github.com/Theman49/japanese-indonesia-dictionary.git",
         "urlDemo": "",
-        "urlImages": [
-            "",
-            ""
-        ]
+        "images": []
     },
     {
         "id": "8",
@@ -98,9 +130,6 @@
         "desc": "This program build with bash script and used for auto wakeup laptop when the power is off. We can set spesific time when it will be wake up. This idea is come out when we always need to press power button on laptop to turn it on. If we use laptop as a normal without using monitor it's no issue, but the problem is when our laptop we use as a dock when using monitor. At this moment, we need to take laptop out from dock and open the lid. With this program we can automatic wakeup withot pressing the power button.",
         "urlGithub": "https://github.com/Theman49/japanese-indonesia-dictionary.git",
         "urlDemo": "",
-        "urlImages": [
-            "",
-            ""
-        ]
+        "images": []
     }
 ]
