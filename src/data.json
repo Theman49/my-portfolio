@@ -30,7 +30,7 @@
         "title": "Home Buy Now",
         "type": "web",
         "tech": ["laravel", "bootstrap", "mysql"],
-        "desc": "Home Buy Now is website for selling house in JABODETABEK. This website also include admin system to control house property like add new house, edit house information, delete house, and others. This also contain wa contact if you want to talk about the house directly to the owner. If you want to try live demo you can click <b>demo button</b> at top right. Feel free to explore :)<br><br>Note: if you want to try system admin you can contact me <a class='text-lg font-bold' href='/about-me'>here :)</a>",
+        "desc": "Home Buy Now is website for selling house in JABODETABEK. This website also include admin system to control house property like add new house, edit house information, delete house, and others. This also contain wa contact if you want to talk about the house directly to the owner. If you want to try live demo you can click <b>demo button</b> at top right. Feel free to explore :)<br><br>Note: if you want to try system admin you can contact me.",
         "urlGithub": "https://github.com/Theman49/home-buy-now.git",
         "urlDemo": "https://homebuynow.cakdeny49.my.id",
         "images": [
@@ -56,10 +56,36 @@
         "title": "My Portfolio",
         "type": "web",
         "tech": ["astro", "tailwind", "react"],
-        "desc": "",
+        "desc": "This website is to show my projects that i've done. I create this website with astro framework. I chooose this framework because this framework has something unique that possible to combine more framework in one place. Beside that, want to challenge myself to try framework that i've never used. Feel free to explore in this website :)",
         "urlGithub": "https://github.com/Theman49/my-portfolio.git",
         "urlDemo": "https://cakdeny49.my.id",
-        "images": []
+        "images": [
+            {
+                "src": "/images/portfolio/1.png",
+                "alt": "home portfolio",
+                "desc": "<b>Home Page</b> >> This page show first when user visited."
+            },
+            {
+                "src": "/images/portfolio/2.png",
+                "alt": "projects portfolio",
+                "desc": "<b>Projects Page</b> >> This page show list project that i've done."
+            },
+            {
+                "src": "/images/portfolio/3.png",
+                "alt": "detail project portfolio",
+                "desc": "<b>Detail Page</b> >> This page show more information about the project. Like this page what you see :)."
+            },
+            {
+                "src": "/images/portfolio/4.png",
+                "alt": "skills portfolio",
+                "desc": "<b>Skills Page</b> >> This page show list of my skills."
+            },
+            {
+                "src": "/images/portfolio/5.png",
+                "alt": "about portfolio",
+                "desc": "<b>About Page</b> >> This page explain who am i and information how to contact me."
+            }
+        ]
     },
     {
         "id": "4",
@@ -97,39 +123,94 @@
         "title": "MIPA FAIR UNNES",
         "type": "web",
         "tech": ["laravel", "bootstrap", "mysql"],
-        "desc": "MIPA FAIR UNNES is a website information about event that held by leader bem of FMIPA. It contains of live youtube cause the event held on pandemic",
+        "desc": "MIPA FAIR UNNES is a website information about event that held by leader of BEM FMIPA. It contains of live youtube cause the event held on pandemic. This event not only for people from fmipa, but also for all could get access to this event and can watch the event live through live youtube. If you want to try live demo you can click <b>demo button</b> at top right. Feel free to explore :)",
         "urlGithub": "https://github.com/Theman49/mipa-fair-unnes.git",
         "urlDemo": "https://mipafairunnes.cakdeny49.my.id",
-        "images": []
+        "images": [
+            {
+                "src": "/images/mipafairunnes/1.png",
+                "alt": "home mipafairunnes",
+                "desc": "<b>Home Page</b> >> This page contains speech from leader and also to show the media partner and sponsor to this event."
+            },
+            {
+                "src": "/images/mipafairunnes/2.png",
+                "alt": "presence mipafairunnes",
+                "desc": "<b>Presence Page</b> >> People that visit the website will go to this page first to presence from where they are, are they from inside of fmipa or outside."
+            },
+            {
+                "src": "/images/mipafairunnes/3.png",
+                "alt": "information mipafairunnes",
+                "desc": "<b>Information Page</b> >> This page show what organizations in FMIPA. The organization divided to 3 part UKM, BSO, and LK."
+            }
+        ]
     },
     {
         "id": "6",
         "title": "Bisatani Frontend Mobile",
         "type": "web",
+        "view": "mobile",
         "tech": ["html", "css", "javascript"],
-        "desc": "Bisatani is a website to control farmer activity including where the location of his land, when the land need to watery, when harvesting, and other",
+        "desc": "!Disclaimer, this website prefer to view at mobile and only frontend so there is no connection with backend.<br/>Bisatani is a website to control farmer activity including where the location of his land, when the land need to watery, when harvesting, and other. If you want to try live demo you can click <b>demo button</b> at top right. Feel free to explore :)",
         "urlGithub": "https://github.com/Theman49/bisatani-frontend.git",
-        "urlDemo": "https://bisatani-frontend.vercel.app",
-        "images": []
+        "urlDemo": "https://bisatani.cakdeny49.my.id",
+        "images": [
+            {
+                "src": "/images/bisatani/1.png",
+                "alt": "login bisatani",
+                "desc": "<b>Login Page</b> >> This page is login page that can access with '/login' in the url."
+            },
+            {
+                "src": "/images/bisatani/2.png",
+                "alt": "home bisatani",
+                "desc": "<b>Home Page</b> >> This page show summary of their land, limit saldo, article, palwija price on the table."
+            },
+            {
+                "src": "/images/bisatani/3.png",
+                "alt": "general bisatani",
+                "desc": "<b>General Page</b> >> This page show location about the land on the map and also information about each land. This page can access with '/lahanku'. Other page also can access by bottom menu."
+            },
+            {
+                "src": "/images/bisatani/4.png",
+                "alt": "notification bisatani",
+                "desc": "<b>Notification</b> >> This feature for notification about activity and others."
+            }
+        ]
     },
     {
         "id": "7",
         "title": "Japanese-Indonesia Dictionary",
         "type": "CLI",
         "tech": ["bash"],
-        "desc": "This program was build to easier my learning japanese language. This program contains the grammars and vocabularies of japanese language from N5 until N4 chapter 8. Search program accept one parameter and return kanji and hiragana.",
+        "desc": "This program was build to easier my learning japanese language. This program contains the grammars and vocabularies of japanese language from N5 until N4 chapter 8. Search program accept one parameter and return kanji and hiragana. Feel free to use this system, just checkout my repo at github with click <b>code button</b> at top right.",
         "urlGithub": "https://github.com/Theman49/japanese-indonesia-dictionary.git",
         "urlDemo": "",
-        "images": []
+        "images": [
+            {
+                "src": "/images/japanese/1.png",
+                "alt": "vocabulary",
+                "desc": "<b>Vocabulary</b> >> This file contains vocabularies from N5 bab 2 - 25 until N4 bab 8."
+            },
+            {
+                "src": "/images/japanese/2.png",
+                "alt": "grammar",
+                "desc": "<b>Grammar</b> >> This file contains grammar from N5 bab 1 - 25 until N4 bab 8."
+            }
+        ]
     },
     {
         "id": "8",
         "title": "RTCWAKE Linux",
         "type": "CLI",
         "tech": [ "linux", "bash"],
-        "desc": "This program build with bash script and used for auto wakeup laptop when the power is off. We can set spesific time when it will be wake up. This idea is come out when we always need to press power button on laptop to turn it on. If we use laptop as a normal without using monitor it's no issue, but the problem is when our laptop we use as a dock when using monitor. At this moment, we need to take laptop out from dock and open the lid. With this program we can automatic wakeup withot pressing the power button.",
+        "desc": "This program build with bash script and used for auto wakeup laptop when the power is off. We can set spesific time when it will be wake up. This idea is come out when we always need to press power button on laptop to turn it on. If we use laptop as a normal without using monitor it's no issue, but the problem is when our laptop we use as a dock when using monitor. At this moment, we need to take laptop out from dock and open the lid. With this program we can automatic wakeup withot pressing the power button. Feel free to use this system, just checkout my repo at github with click <b>code button</b> at top right.",
         "urlGithub": "https://github.com/Theman49/japanese-indonesia-dictionary.git",
         "urlDemo": "",
-        "images": []
+        "images": [
+            {
+                "src": "/images/rtcwake/1.png",
+                "alt": "rtcwakeup",
+                "desc": "<b>RTCwakeup</b> >> This script can use automatically shutdown system and wakeup in linux."
+            }
+        ]
     }
 ]

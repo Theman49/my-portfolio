@@ -25,6 +25,7 @@ interface Props {
     id: string;
     title: string;
     type: string;
+    view?: string;
     tech?: Array<any>;
     desc?: string;
     urlGithub?: string;
@@ -36,12 +37,15 @@ const {
     id,
     title,
     type,
+    view,
     tech,
     desc,
     urlGithub,
     urlDemo,
     urlImage,
 } = Astro.props
+
+const isMobile = view == 'mobile' ? true : false
 
 const slug = (title?.toLowerCase()).replace(/\s/g, '-')
 const trunctDescMobile = desc ? truncate(desc ,100) : ''
@@ -57,10 +61,15 @@ const trunctDescDesktop = desc ? truncate(desc ,500) : ''
     </a>
 
     <div class="popup flex flex-col absolute right-0 border-4 rounded-lg text-white">
+        {isMobile ? 
         <div class="border-b-4 rounded-b-lg w-full h-[180px] md:h-[240px] bg-dark-1 overflow-hidden">
+            <img src={urlImage || '/default-image-project.png'} class="h-full mx-auto"/>
+        </div> : 
+        <div class="flex items-center border-b-4 rounded-b-lg w-full h-[180px] md:h-[240px] bg-dark-1 overflow-hidden">
             <img src={urlImage || '/default-image-project.png'} class="w-full"/>
         </div>
-        <div class="flex flex-col p-3 md:p-5 gap-7">
+        }
+        <div class="wrapper-body flex flex-col p-3 md:p-5 gap-7 overflow-y-auto">
             <div class="flex flex-col gap-5">
                 <div class="flex flex-col gap-7">
                     <div class="flex flex-col md:flex-row md:items-baseline gap-1">
@@ -227,7 +236,7 @@ const trunctDescDesktop = desc ? truncate(desc ,500) : ''
     </div>
 </div>
 
-<style>
+<style define:vars={{width: isMobile ? '50%' : '75%'}}>
     div.wrapper > a + div {
         background-color: #03001C;
         transition: width;
@@ -246,7 +255,7 @@ const trunctDescDesktop = desc ? truncate(desc ,500) : ''
 
     div.wrapper:hover > a + div{
         z-index: 100;
-        width: 75%;
+        width: var(--width);
         visibility: visible;
         opacity: 1;
 
@@ -279,6 +288,23 @@ const trunctDescDesktop = desc ? truncate(desc ,500) : ''
 
 
     @media screen and (max-width: 425px){
+        div.wrapper:hover > a + div{
+            z-index: 100;
+            width: 75%;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .wrapper-body {
+            height: 200px;
+        }
+        .wrapper-body::-webkit-scrollbar {
+            display: hidden;
+        }
+
+        .popup > div:first-child:hover {
+            height: 200px;
+        }
 
         div#tech span {
             font-size: 20px;

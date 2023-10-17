@@ -43,32 +43,39 @@ const socmed = [
         </div>
     </div>
 
-    <div id="link" class="flex flex-col">
-        <a href="/" class={page === 'home' || page === '' ? 'active' : ''}>
-            <div class="flex gap-2">
-                <i class="cil-home text-[24px]"></i>
-                <p>Home</p>
-            </div>
-        </a>
-        <a href="/projects" class={page === 'projects' ? 'active' : ''}>
-            <div class="flex gap-2">
-                <i class="cil-briefcase text-[24px]"></i>
-                <p>Projects</p>
-            </div>
-        </a>
-        <a href="/skills"class={page === 'skills' ? 'active' : ''}>
-            <div class="flex gap-2">
-                <i class="cil-tags text-[24px]"></i>
-                <p>Skills</p>
-            </div>
-        </a>
-        <a href="/about-me"class={page === 'about-me' ? 'active' : ''}>
-            <div class="flex gap-2">
-                <i class="cil-info text-[24px]"></i>
-                <p>About Me</p>
-            </div>
-        </a>
+    <div class="flex flex-col gap-6">
+        <div id="link" class="flex flex-col">
+            <a href="/" class={page === 'home' || page === '' ? 'active' : ''}>
+                <div class="flex gap-2">
+                    <i class="cil-home text-[24px]"></i>
+                    <p>Home</p>
+                </div>
+            </a>
+            <a href="/projects" class={page === 'projects' ? 'active' : ''}>
+                <div class="flex gap-2">
+                    <i class="cil-briefcase text-[24px]"></i>
+                    <p>Projects</p>
+                </div>
+            </a>
+            <a href="/skills"class={page === 'skills' ? 'active' : ''}>
+                <div class="flex gap-2">
+                    <i class="cil-tags text-[24px]"></i>
+                    <p>Skills</p>
+                </div>
+            </a>
+            <a href="/about-me"class={page === 'about-me' ? 'active' : ''}>
+                <div class="flex gap-2">
+                    <i class="cil-info text-[24px]"></i>
+                    <p>About Me</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="flex justify-center text-white">
+            <p id="copyright">©2023 made with <span class="text-xl text-[#B6EADA]">❤</span></p>
+        </div>
     </div>
+
 </div>
 
 <style>
@@ -88,5 +95,8 @@ const socmed = [
     }
     #link p {
         font-size: 20px;
+    }
+    #copyright {
+        font-family: 'Inter', sans-serif;
     }
 </style>
