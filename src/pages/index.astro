@@ -1,14 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import {FiDownload} from 'react-icons/fi'
 ---
 
 <Layout title="Home">
 	<div class="px-4">
 		<p class="text-light-2 text-[36px]">こんにちは、</p>
-		<div class="text-white text-[54px] md:text-[96px] font-extralight">
+		<div class="text-white text-[44px] md:text-[96px] font-extralight">
 			<p>I am <span class="font-bold">Deny</span></p>
 			<p>Linux User &</p>
 			<p>Web Developer</p>
 		</div>
+		<a id="cv" target="blank" href="/cv-2023.pdf" class="flex justify-center items-center gap-2 mt-2 border-4 border-[#B6EADA] text-white rounded-lg w-full md:w-[300px] py-3 w-fit"><span class="text-3xl"><FiDownload /></span><span class="text-2xl">CV</span></a>
 	</div>
 </Layout>
