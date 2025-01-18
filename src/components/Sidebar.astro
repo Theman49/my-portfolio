@@ -3,6 +3,7 @@ import "@coreui/icons/css/all.css"
 
 const pathname = new URL(Astro.request.url).pathname;
 const page = pathname.slice(1); // remove the first "/"
+const year = (new Date()).getUTCFullYear();
 
 const socmed = [
     {
@@ -72,7 +73,7 @@ const socmed = [
         </div>
 
         <div class="flex justify-center text-white">
-            <p id="copyright">©2024 made with <span class="text-xl text-[#B6EADA]">❤</span></p>
+            <p id="copyright">©{year} made with <span class="text-xl text-[#B6EADA]">❤</span></p>
         </div>
     </div>
 

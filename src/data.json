@@ -3,7 +3,13 @@
         "id": "1",
         "title": "Yukprivate",
         "type": "web",
-        "tech": ["react", "tailwind", "mysql", "sequelize", "nodejs"],
+        "tech": [
+            "react",
+            "tailwind",
+            "mysql",
+            "sequelize",
+            "nodejs"
+        ],
         "desc": "Yukprivate is website for rent tentor online in semarang area. User can register as students or tentor in here. Student can find tentor to teach them on their house. Not only student that use this system, but also the tentor. The tentor can setting their schedule, course, online of offline, and others. In this system also including payment with using payment gateway of midtrans. If you want to try live demo you can click <b>demo button</b> at top right. Feel free to explore :)<br/><br/>Student account demo:<br>username: <b>student@gmail.com</b> and password: <b>password</b> <br/>Tentor account demo:<br>username: <b>adi@gmail.com</b> and password: <b>password</b>",
         "urlGithub": "https://github.com/Theman49/yukprivate.git",
         "urlDemo": "https://yukprivate.cakdeny49.my.id",
@@ -29,7 +35,11 @@
         "id": "2",
         "title": "Home Buy Now",
         "type": "web",
-        "tech": ["laravel", "bootstrap", "mysql"],
+        "tech": [
+            "laravel",
+            "bootstrap",
+            "mysql"
+        ],
         "desc": "Home Buy Now is website for selling house in JABODETABEK. This website also include admin system to control house property like add new house, edit house information, delete house, and others. This also contain wa contact if you want to talk about the house directly to the owner. If you want to try live demo you can click <b>demo button</b> at top right. Feel free to explore :)<br><br>Note: if you want to try system admin you can contact me.",
         "urlGithub": "https://github.com/Theman49/home-buy-now.git",
         "urlDemo": "https://homebuynow.cakdeny49.my.id",
@@ -55,7 +65,11 @@
         "id": "3",
         "title": "My Portfolio",
         "type": "web",
-        "tech": ["astro", "tailwind", "react"],
+        "tech": [
+            "astro",
+            "tailwind",
+            "react"
+        ],
         "desc": "This website is to show my projects that i've done. I create this website with astro framework. I chooose this framework because this framework has something unique that possible to combine more framework in one place. Beside that, want to challenge myself to try framework that i've never used. Feel free to explore in this website :)",
         "urlGithub": "https://github.com/Theman49/my-portfolio.git",
         "urlDemo": "https://cakdeny49.my.id",
@@ -91,7 +105,11 @@
         "id": "4",
         "title": "PKKMB FMIPA UNNES 2021",
         "type": "web",
-        "tech": ["codeigniter", "bootstrap", "mysql"],
+        "tech": [
+            "codeigniter",
+            "bootstrap",
+            "mysql"
+        ],
         "desc": "PKKMB FMIPA is a website for new student at fmipa unnes 2021. This website contain information of the activity that will be held. Also as task management that need to complete by new student. This system using connection to google drive to upload task that need to have done by students to complete the event. If you want to try live demo you can click <b>demo button</b> at top right. Feel free to explore :)<br/><br/>account demo:<br>username: <b>user@gmail.com</b> and password: <b>1234567890</b>",
         "urlGithub": "https://github.com/Theman49/pkkmb-fmipa-2021.git",
         "urlDemo": "https://pkkmbfmipaunnes.cakdeny49.my.id",
@@ -122,7 +140,11 @@
         "id": "5",
         "title": "MIPA FAIR UNNES",
         "type": "web",
-        "tech": ["laravel", "bootstrap", "mysql"],
+        "tech": [
+            "laravel",
+            "bootstrap",
+            "mysql"
+        ],
         "desc": "MIPA FAIR UNNES is a website information about event that held by leader of BEM FMIPA. It contains of live youtube cause the event held on pandemic. This event not only for people from fmipa, but also for all could get access to this event and can watch the event live through live youtube. If you want to try live demo you can click <b>demo button</b> at top right. Feel free to explore :)",
         "urlGithub": "https://github.com/Theman49/mipa-fair-unnes.git",
         "urlDemo": "https://mipafairunnes.cakdeny49.my.id",
@@ -149,7 +171,11 @@
         "title": "Bisatani Frontend Mobile",
         "type": "web",
         "view": "mobile",
-        "tech": ["html", "css", "javascript"],
+        "tech": [
+            "html",
+            "css",
+            "javascript"
+        ],
         "desc": "!Disclaimer, this website prefer to view at mobile and only frontend so there is no connection with backend.<br/>Bisatani is a website to control farmer activity including where the location of his land, when the land need to watery, when harvesting, and other. If you want to try live demo you can click <b>demo button</b> at top right. Feel free to explore :)",
         "urlGithub": "https://github.com/Theman49/bisatani-frontend.git",
         "urlDemo": "https://bisatani.cakdeny49.my.id",
@@ -180,7 +206,9 @@
         "id": "7",
         "title": "Japanese-Indonesia Dictionary",
         "type": "CLI",
-        "tech": ["bash"],
+        "tech": [
+            "bash"
+        ],
         "desc": "This program was build to easier my learning japanese language. This program contains the grammars and vocabularies of japanese language from N5 until N4 chapter 8. Search program accept one parameter and return kanji and hiragana. Feel free to use this system, just checkout my repo at github with click <b>code button</b> at top right.",
         "urlGithub": "https://github.com/Theman49/japanese-indonesia-dictionary.git",
         "urlDemo": "",
@@ -201,9 +229,12 @@
         "id": "8",
         "title": "RTCWAKE Linux",
         "type": "CLI",
-        "tech": [ "linux", "bash"],
+        "tech": [
+            "linux",
+            "bash"
+        ],
         "desc": "This program build with bash script and used for auto wakeup laptop when the power is off. We can set spesific time when it will be wake up. This idea is come out when we always need to press power button on laptop to turn it on. If we use laptop as a normal without using monitor it's no issue, but the problem is when our laptop we use as a dock when using monitor. At this moment, we need to take laptop out from dock and open the lid. With this program we can automatic wakeup withot pressing the power button. Feel free to use this system, just checkout my repo at github with click <b>code button</b> at top right.",
-        "urlGithub": "https://github.com/Theman49/japanese-indonesia-dictionary.git",
+        "urlGithub": "https://github.com/Theman49/rtcwake-linux.git",
         "urlDemo": "",
         "images": [
             {
