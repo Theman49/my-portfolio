@@ -19,6 +19,7 @@ import {
     SiSequelize,
     SiAstro,
     SiLinux,
+    SiFlask
 } from "react-icons/si"
 
 interface Props {
@@ -203,6 +204,14 @@ const trunctDescDesktop = desc ? truncate(desc ,500) : ''
                                 case 'linux':
                                     return <div class="flex items-center gap-2">
                                         <span class="text-light-2"><SiLinux />
+                                        </span>
+                                        <span class="label">
+                                            {label}
+                                        </span>
+                                    </div>
+                                case 'flask':
+                                    return <div class="flex items-center gap-2">
+                                        <span class="text-light-2"><SiFlask />
                                         </span>
                                         <span class="label">
                                             {label}

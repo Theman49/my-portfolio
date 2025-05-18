@@ -17,6 +17,7 @@ import {
     SiSequelize,
     SiAstro,
     SiLinux,
+    SiFlask
 } from "react-icons/si"
 
 import Layout from '@/layouts/Layout.astro'
@@ -179,6 +180,14 @@ const data = projectDatas.filter((item) => {
                             case 'linux':
                                 return <div class="flex items-center gap-2">
                                     <span class="text-light-2"><SiLinux />
+                                    </span>
+                                    <span class="label">
+                                        {label}
+                                    </span>
+                                </div>
+                            case 'flask':
+                                return <div class="flex items-center gap-2">
+                                    <span class="text-light-2"><SiFlask />
                                     </span>
                                     <span class="label">
                                         {label}

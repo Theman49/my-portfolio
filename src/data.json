@@ -243,5 +243,36 @@
                 "desc": "<b>RTCwakeup</b> >> This script can use automatically shutdown system and wakeup in linux."
             }
         ]
+    },
+    {
+        "id": "9",
+        "title": "Kanji Jisho",
+        "type": "web",
+        "tech": [
+            "html",
+            "css",
+            "javascript",
+            "flask"
+        ],
+        "desc": "This web application is to enhance my japanese language and to motivate me to keep learning with my customization display from jisho.org. In this application i make simple searching and listing kanji or word based on my preference. Big thanks to jisho.org that help me a lot when learning japanese language. So you guys if want more complex searching you can go to jisho.org <a href='https://jisho.org'>here</a>. But if you like my customization feel free to check this application with click <b>demo button</b> at top right.",
+        "urlGithub": "https://github.com/Theman49/kanji.git",
+        "urlDemo": "https://kanji.cakdeny49.my.id",
+        "images": [
+            {
+                "src": "/images/kanji/1.png",
+                "alt": "kanji",
+                "desc": "<b>Home</b> >> This is home menu when first access the link, it listed button for kanji per jlpt level."
+            },
+            {
+                "src": "/images/kanji/2.png",
+                "alt": "kanji per level",
+                "desc": "<b>Kanji</b> >> This is page for kanji per jlpt level. Also can find spesific kanji on that level just with type in search box."
+            },
+            {
+                "src": "/images/kanji/3.png",
+                "alt": "search",
+                "desc": "<b>Search</b> >> This is page when click kanji to directly list all words that contain the kanji. Also able to search word, yomikata,and others."
+            }
+        ]
     }
 ]
